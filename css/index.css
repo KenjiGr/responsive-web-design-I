@@ -76,6 +76,7 @@ header nav a{
 }
 /*nav bar*/
 .navbar {
+	display: flex;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -96,8 +97,7 @@ header nav a{
 	text-decoration: none;
   }
 .logo{
-	display: inline-block;
-	padding: 20px 30px 0px 30px;
+	padding: 20px 50px 20px 30px;
 }
 /*title styling*/
 h1{
@@ -265,7 +265,10 @@ footer{
 @media (min-width: 450px){
     body{
         width: 450px;
-    }
+	}
+	div.navbar{
+		flex-direction: column-reverse;
+	}
     div.fix{
         width: 100%;
         margin-bottom: 60px;
@@ -274,21 +277,21 @@ footer{
     .navbar{
         background-color: white;
         position: initial;
-        width: 100%;
+		width: 100%;
     }
     .navbar nav{
         display: flex;
         flex-direction: column;
         align-content: center;
-        justify-content: center;
+		justify-content: center;
+		border-top: grey 1px solid;
     }
     .navbar nav a{
         border-bottom: grey 1px solid;
         margin-bottom: 10px;
     }
     .logo{
-        border-bottom: grey 1px solid;
-        margin: 10px 100px;
+		margin: 10px 100px;
     }
     .code{
         display: none;
