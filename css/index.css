@@ -167,17 +167,14 @@ div.abt{
 	margin: 0px 49px 30px 49px;
 }
 div.service{
-	display: inline-block;
 	width: 29%;
 	margin-left: 50px;
 	margin-bottom: 30px;
 }
 div.product{
-	display: inline-block;
 	width: 29%;
 }
 div.vision{
-	display: inline-block;
 	width:29%;
 }
 /*contact info/footer*/
@@ -266,6 +263,14 @@ footer{
 	height: 400px;
 }
 @media (min-width: 450px){
+    body{
+        width: 450px;
+    }
+    div.fix{
+        width: 100%;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
     .navbar{
         background-color: white;
         position: absolute;
@@ -286,6 +291,24 @@ footer{
         justify-content: center;
         align-content: center;
         width: 100%;
+        padding: 0;
+    }
+    div.flow{
+        flex-direction: column;
+        align-content: center;
+    }
+div.service{
+        margin: 0;
+    }
+div.feat, div.abt{
+        margin: 0;
+    }
+    div.abt, div.feat, div.product, div.vision, div.service{
+        width: 100%;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+    hr{
+        width: 450px;
     }
 }
-
