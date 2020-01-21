@@ -75,7 +75,7 @@ header nav a{
 	font-size: 14px;
 }
 /*nav bar*/
-.navbar {
+/*.navbar {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -98,7 +98,7 @@ header nav a{
 .logo{
 	display: inline-block;
 	padding: 20px 30px 0px 30px;
-}
+}*/
 /*title styling*/
 h1{
 	font-size: 80px;
@@ -264,5 +264,28 @@ footer{
 	width: 90%;
 	margin-left: 49px;
 	height: 400px;
+}
+@media (min-width: 450px){
+    .navbar{
+        background-color: white;
+        position: absolute;
+    }
+    .navbar nav{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .navbar nav a{
+        border-bottom: grey 1px solid;
+    }
+    .code{
+        display: none;
+    }
+    div.title{
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
 }
 
