@@ -262,7 +262,7 @@ footer{
 	margin-left: 49px;
 	height: 400px;
 }
-@media (min-width: 450px){
+@media (max-width: 450px){
     body{
         width: 450px;
 	}
@@ -331,4 +331,26 @@ footer{
     div.contact{
         margin-left: 0;
     }
+}
+@media (min-width: 800px){
+	.nav-contain{
+		flex-direction: row;
+	}
+	.navbar{
+		flex-direction: column-reverse;
+		align-items: center;
+		background: white;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	div.title{
+		align-items: center;
+		width: 100%;
+		padding: 0px;
+		margin-top: 60px;
+	}
+	.code{
+		display: none;
+	}
 }
